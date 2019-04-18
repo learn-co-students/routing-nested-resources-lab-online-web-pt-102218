@@ -6,4 +6,6 @@ Rails.application.routes.draw do
     # nested resource for artists
     resources :songs, only: [:show, :index]
   end
+
+  root 'songs#index'
 end
