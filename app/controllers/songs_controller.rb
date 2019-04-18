@@ -1,6 +1,5 @@
 class SongsController < ApplicationController
   def index
-    binding.pry
     if params[:artist_id].class == String
       flash[:notice] = "Artist not found."
       redirect_to artists_path
