@@ -3,7 +3,7 @@
     <li><%= display_artist(song) %> - <%= link_to song.title, song_path(song) %></li>
     <% if song.artist %>
       <li><%= link_to song.artist.name, artist_song_path(song.artist, song.id) %> </li>
-      <li><%= link_to song.title, artist_songs_path(song.artist) %></li>
+      Song not found <li><%= link_to song.title, song_path(song) %></li>
       <% end %>
   <% end %>
   </ul>
